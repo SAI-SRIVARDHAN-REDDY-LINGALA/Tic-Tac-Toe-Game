@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:rgb(29, 99, 29); /* Background color for the entire page */
+  text-align: center; /* Center-aligning text content */
+}
+
+.container {
+  height: 70vh; /* Setting height for the container to 70% of viewport height */
+  display: flex; /* Using flexbox for layout */
+  justify-content: center; /* Centering horizontally */
+  align-items: center; /* Centering vertically */
+}
+
+.game {
+  height: 60vmin; /* Setting height for the game grid */
+  width: 60vmin; /* Setting width for the game grid */
+  display: flex; /* Using flexbox for layout */
+  flex-wrap: wrap; /* Allowing items to wrap */
+  justify-content: center; /* Centering horizontally */
+  align-items: center; /* Centering vertically */
+  gap: 1.5vmin; /* Gap between game boxes */
+}
+
+.box {
+  height: 18vmin; /* Setting height for each box */
+  width: 18vmin; /* Setting width for each box */
+  border-radius: 1rem; /* Adding border radius for rounded corners */
+  border: none; /* Removing border */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* Adding box shadow for depth */
+  font-size: 8vmin; /* Setting font size */
+  background-color: #ffffc7; /* Background color for boxes */
+}
+
+.box.x {
+  color:deepskyblue; /* Color for X (red) */
+}
+
+.box.o {
+  color: deeppink; /* Color for O (blue) */
+}
+
+#reset-btn,
+#new-btn {
+  padding: 1rem; /* Adding padding */
+  font-size: 1.25rem; /* Setting font size */
+  background-color: #191913; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 1rem; /* Adding border radius for rounded corners */
+  border: none; /* Removing border */
+}
+
+#msg {
+  color: yellow; /* Text color for game messages */
+  font-size: 5vmin; /* Setting font size */
+}
+
+
+
+.msg-container {
+  height: 100vmin; /* Setting height for message container */
+  display: flex; /* Using flexbox for layout */
+  justify-content: center; /* Centering horizontally */
+  align-items: center; /* Centering vertically */
+  flex-direction: column; /* Column direction for message and button */
+  gap: 4rem; /* Gap between elements */
+}
+
+.hide {
+  display: none; /* Hiding element with display none */
+}
